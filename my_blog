@@ -1,0 +1,7 @@
+my_blog/
+│
+├─ app.py
+├─ posts.json   (empty file)
+└─ templates/
+    ├─ index.html
+    └─ new.html
