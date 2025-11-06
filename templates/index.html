@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog for Ani-zet</title>
+    <style>
+      body {
+        font-family: Arial;
+        background: #f9f9f9;
+        padding: 20px;
+      }
+      .post {
+        background: #fff;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #6c5ce7;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ანი-zet blog page</h1>
+    <a href="/new">➕ Add New Post</a>
+    {% for post in posts %}
+    <div class="post">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.content }}</p>
+    </div>
+    {% endfor %}
+  </body>
+</html>
